@@ -1,0 +1,17 @@
+[
+  {
+    "text": "Schemas",
+    "link": "/schemas/",
+    "activeMatch": "/schemas/"
+  },
+  {
+    "text": "Extensions",
+    "link": "/extensions/",
+    "activeMatch": "/extensions/"
+  },
+  {
+    "text": "Operations",
+    "link": "/operations/",
+    "activeMatch": "/operations/"
+  }
+]

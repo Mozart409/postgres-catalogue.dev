@@ -1,0 +1,19 @@
+{
+  "name": "postgres-catalogue.dev",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "rspress build",
+    "check": "biome check --write",
+    "dev": "rspress dev",
+    "fmt": "biome format --write",
+    "preview": "rspress preview"
+  },
+  "dependencies": {
+    "rspress": "^1.37.3"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.3",
+    "@types/node": "^22.10.1"
+  }
+}
