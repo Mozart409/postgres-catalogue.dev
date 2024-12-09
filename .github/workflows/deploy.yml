@@ -12,10 +12,6 @@ permissions:
   pages: write
   id-token: write
 
-concurrency:
-  group: pages
-  cancel-in-progress: false
-
 jobs:
   # Build job
   build:
@@ -33,14 +29,10 @@ jobs:
       with:
         node-version: 22
         cache: pnpm
-    - name: Setup Pages
-      uses: actions/configure-pages@v5
     - name: Install dependencies
       run: pnpm install
+    - name: Format code
+      run: pnpm run fmt
     - name: Build with Rspress
       run: |
         pnpm run build
-    - name: Upload artifact
-      uses: actions/upload-pages-artifact@v3
-      with:
-        path: doc_build
